@@ -32,6 +32,7 @@ const chartConfig = {
 interface SimulationResult {
   key: string;
   wins: number;
+  fill: string;
 }
 
 export default function Home() {
@@ -81,6 +82,7 @@ export default function Home() {
             newSimulationResults[winner.name] = {
               key: winner.name,
               wins: 1,
+              fill: "var(--color-wins)",
             };
           } else {
             newSimulationResults[winner.name]!.wins += 1;
@@ -166,6 +168,16 @@ export default function Home() {
           </Card>
         </div>
       </div>
+      <footer className="mt-8 mb-4 w-full max-w-5xl text-center text-xs text-primary/40">
+        <p>
+          Unofficial fan project. Not affiliated with, endorsed, or supported by
+          Kuro Games.
+        </p>
+        <p>
+          &quot;Wuthering Waves&quot;, &quot;Cubie Derby&quot;, and related
+          names are properties of Kuro Games.
+        </p>
+      </footer>
     </main>
   );
 }

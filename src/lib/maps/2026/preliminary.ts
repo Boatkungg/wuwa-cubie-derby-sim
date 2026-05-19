@@ -21,3 +21,5 @@ export default function preliminaryMap2026({
 
   return game;
 }
+
+preliminaryMap2026.displayName = "Preliminary (2026)";

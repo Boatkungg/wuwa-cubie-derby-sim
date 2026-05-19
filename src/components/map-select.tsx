@@ -128,7 +128,7 @@ export default function MapSelect({ onSelectAction }: MapSelectProps) {
               <SelectGroup>
                 {Object.entries(maps).map(([key, mapGenerator]) => (
                   <SelectItem key={key} value={key}>
-                    {formatMapName(mapGenerator.name)}
+                    {mapGenerator.displayName}
                   </SelectItem>
                 ))}
               </SelectGroup>

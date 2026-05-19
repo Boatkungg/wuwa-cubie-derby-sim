@@ -22,3 +22,5 @@ export default function eliminatorMap2026({
 
   return game;
 }
+
+eliminatorMap2026.displayName = "Eliminator (2026)";

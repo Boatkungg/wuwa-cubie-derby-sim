@@ -14,7 +14,7 @@ export default class CartethyiaCube extends BaseCube {
   public hasTriggered: boolean = false;
   public extraAdvanceActive: boolean = false;
 
-  public override onTurnStart(_game: Game): void {
+  public override onTurnStart(game: Game): void {
     if (this.extraAdvanceActive) {
       this.stepModifier += 2;
     }

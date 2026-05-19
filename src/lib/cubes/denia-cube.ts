@@ -11,7 +11,7 @@ export default class DeniaCube extends BaseCube {
 
   public previousRoll: number = 0;
 
-  public override onTurnStart(_game: Game): void {
+  public override onTurnStart(game: Game): void {
     if (this.previousRoll === this.rollResult && this.previousRoll !== 0) {
       this.stepModifier += 2;
     }

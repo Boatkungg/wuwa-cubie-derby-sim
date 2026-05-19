@@ -18,7 +18,6 @@ import {
 } from "./ui/select";
 
 import * as maps from "@/lib/maps";
-import { formatMapName } from "@/lib/core/utils";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { Input } from "./ui/input";

@@ -1,6 +1,7 @@
 export { default as AbbowserCube } from "./abbowser-cube";
 export { default as AemeathCube } from "./aemeath-cube";
 export { default as AugustaCube } from "./augusta-cube";
+export { default as CalcharoCube } from "./calcharo-cube";
 export { default as CarlottaCube } from "./carlotta-cube";
 export { default as CartethyiaCube } from "./cartethyia-cube";
 export { default as ChangliCube } from "./changli-cube";
@@ -12,6 +13,7 @@ export { default as JinhsiCube } from "./jinhsi-cube";
 export { default as LuukHerssenCube } from "./luuk-herssen-cube";
 export { default as LynaeCube } from "./lynae-cube";
 export { default as MornyeCube } from "./mornye-cube";
+export { default as PhoebeCube } from "./phoebe-cube";
 export { default as PhrolovaCube } from "./phrolova-cube";
 export { default as ShorekeeperCube } from "./shorekeeper-cube";
 export { default as SigrikaCube } from "./sigrika-cube";

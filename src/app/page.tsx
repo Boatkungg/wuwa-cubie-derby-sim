@@ -130,7 +130,7 @@ export default function Home() {
                 >
                   <BarChart
                     accessibilityLayer
-                    data={Object.values(simulationResults)}
+                    data={Object.values(simulationResults).sort((a, b) => b.wins - a.wins)}
                   >
                     <CartesianGrid vertical={false} />
                     <XAxis

@@ -9,7 +9,7 @@ export default class PhrolovaCube extends BaseCube {
   static override displayName: string = "Phrolova Cube";
   name = PhrolovaCube.displayName;
 
-  public override onTurnStart(game: Game) {
+  public override onBeforeMove(game: Game) {
     const currentPosition = game.getCubePosition({
       cube: this,
     });
@@ -26,7 +26,7 @@ export default class PhrolovaCube extends BaseCube {
       (c) => c.name === this.name,
     );
 
-    if (currentStackIndex === 0) {
+    if (currentStackIndex === 0 && currentPad.cubesOnPad.length > 1) {
       // This Cube is at the bottom of the stack, advance 3 extra pads
       this.stepModifier += 3;
     }

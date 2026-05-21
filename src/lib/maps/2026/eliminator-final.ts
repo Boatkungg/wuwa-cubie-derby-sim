@@ -1,6 +1,6 @@
 import { Game } from "../../core/game";
 
-export default function eliminatorMap2026({
+export default function eliminatorFinalMap2026({
   laps = 1,
   currentLap = 1,
 }: { laps?: number; currentLap?: number } = {}) {
@@ -23,4 +23,4 @@ export default function eliminatorMap2026({
   return game;
 }
 
-eliminatorMap2026.displayName = "Eliminator (2026)";
+eliminatorFinalMap2026.displayName = "Eliminator & Final (2026)";
